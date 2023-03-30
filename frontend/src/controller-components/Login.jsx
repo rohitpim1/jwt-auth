@@ -1,7 +1,10 @@
 import React,{useState} from 'react'
+import "./login.css"
+
+import {NavLink} from 'react-router-dom'
 
 import { Input,Heading, InputGroup, InputRightElement, Button} from '@chakra-ui/react'
-import "./login.css"
+
 const Login = () => {
     const [input, setInput] = useState('')
     const [pass, setPass] = useState('')
@@ -56,7 +59,11 @@ const Login = () => {
   </Button>
    </div>
   </form>
+  <div className='link-signup' style={{marginBottom:"20px"}}>
+    <NavLink to="/signup"><p>not a user? Sign Up</p></NavLink>
   </div>
+  </div>
+  
     </div>
   )
 }

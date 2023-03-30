@@ -1,10 +1,10 @@
 import React from 'react'
-
+import {Heading} from '@chakra-ui/react'
 const Header = () => {
   return (
-    <h1>
+    <Heading as="h2" style={{padding:"10px",textAlign:"center"}}>
       propX
-    </h1>
+    </Heading>
   )
 }
 
